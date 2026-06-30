@@ -20,8 +20,16 @@ using var client = new HttpClient(new HttpClientHandler()
 	AutomaticDecompression = DecompressionMethods.All
 })
 {
-	Timeout = TimeSpan.FromSeconds(10),
+	Timeout = TimeSpan.FromSeconds(30),
 };
+
+// 多言語辞書から英語名 (<table>En.csv) のみを再生成するモード。
+// JMA コード表本体 (zip) は再取得せず、ディスク上の既存 <table>.csv とコードで突き合わせる。
+if (args.Contains("--multilingual-only"))
+{
+	await EmitMultilingualEnglishAsync();
+	return;
+}
 
 var isModified = false;
 
@@ -219,6 +227,9 @@ foreach (var entry in zipArchive.Entries)
 		Console.WriteLine("旧Excelフォーマットのためスキップされました: " + entry.FullName);
 	}
 }
+// 多言語辞書から各コード表の英語名を抽出して <table>En.csv を生成する
+await EmitMultilingualEnglishAsync();
+
 Environment.Exit(1);
 
 // https://www.data.jma.go.jp/developer/jma_multilingual.xlsx
@@ -257,6 +268,79 @@ async Task ExtractFromSheetAsync(IWorkbook workbook, string sheetName, string na
 		await csvWriter.WriteLineAsync(string.Join(',', values));
 	}
 }
+// 多言語辞書 (jma_multilingual.xlsx) から各コード表の英語名を抽出し <table>En.csv を生成する。
+// 多言語辞書ページ: https://www.data.jma.go.jp/developer/multilingual.html
+// シート「多言語辞書（本体）」の列: D=日本語 E=英語 T=XMLコード表 U=コード
+// 地名 (震央地域・津波予報区・火山・市町村など) はこの辞書でコード単位に英訳されているため、
+// コード (U) で既存の <table>.csv と突き合わせて英語名の並列CSVを出力する。
+// 辞書に未収録のコードは出力されず、利用側で日本語にフォールバックする。
+async Task EmitMultilingualEnglishAsync()
+{
+	const string mlUrl = "https://www.data.jma.go.jp/developer/jma_multilingual.xlsx";
+	using var res = await client.GetAsync(mlUrl);
+	res.EnsureSuccessStatusCode();
+	using var ms = new MemoryStream(await res.Content.ReadAsByteArrayAsync());
+	var wb = new NPOI.XSSF.UserModel.XSSFWorkbook(ms);
+	var sheet = wb.GetSheetAt(1); // 0: 更新履歴, 1: 多言語辞書（本体）
+
+	// XMLコード表名 -> (コード -> 英語名)
+	var byTable = new Dictionary<string, Dictionary<string, string>>();
+	for (var i = 1; i <= sheet.LastRowNum; i++)
+	{
+		var row = sheet.GetRow(i);
+		if (row is null) continue;
+
+		string Cell(int c)
+		{
+			var v = row.GetCell(c)?.ToString()?.Trim() ?? "";
+			// 数値セルとして読まれた場合の末尾 ".0" を除去する
+			return v.EndsWith(".0") ? v[..^2] : v;
+		}
+
+		var en = Cell(4); var table = Cell(19); var code = Cell(20);
+		if (en.Length == 0 || table.Length == 0 || code.Length == 0)
+			continue;
+		if (!byTable.TryGetValue(table, out var m))
+		{
+			m = new();
+			byTable[table] = m;
+		}
+		// CSV は単純なカンマ区切りで読まれるため英語名中のカンマは置換しておく
+		m.TryAdd(code, en.Replace(",", " "));
+	}
+
+	string[] targets =
+	[
+		"AreaEpicenter", "AreaTsunami", "PointVolcano", "AreaForecastLocalM",
+		"AreaForecastLocalEEW", "AreaInformationPrefectureEarthquake", "AreaInformationCity",
+	];
+	foreach (var table in targets)
+	{
+		if (!byTable.TryGetValue(table, out var m))
+		{
+			Console.WriteLine($"Multilingual: table {table} not found in dictionary, skipped.");
+			continue;
+		}
+		var jpPath = basePath + table + ".csv";
+		if (!File.Exists(jpPath))
+			continue;
+
+		using var w = new StreamWriter(basePath + table + "En.csv", false) { NewLine = "\n" };
+		var hit = 0;
+		foreach (var line in await File.ReadAllLinesAsync(jpPath))
+		{
+			if (string.IsNullOrWhiteSpace(line)) continue;
+			var code = line.Split(',')[0];
+			if (m.TryGetValue(code, out var en))
+			{
+				await w.WriteLineAsync(code + "," + en);
+				hit++;
+			}
+		}
+		Console.WriteLine($"{table}En.csv generated ({hit} entries).");
+	}
+}
+
 async Task ExtractAmedasFromSheetAsync(IWorkbook workbook, string sheetName, string name, (int Row, int Col) startPosition, int columnCount)
 {
 	var sheet = workbook.GetSheet(sheetName) ?? throw new InvalidOperationException($"Sheet {sheetName} not found.");

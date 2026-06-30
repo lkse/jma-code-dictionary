@@ -1,0 +1,558 @@
+011000,Soya Region
+011011,Northern Soya
+011012,Southern Soya
+011013,Rishiri and Rebun
+012000,Kamikawa and Rumoi Region
+012010,Kamikawa Region
+012011,Northern Kamikawa
+012012,Middle Kamikawa
+012013,Southern Kamikawa
+012020,Rumoi Region
+012021,Northern Rumoi
+012022,Middle Rumoi
+012023,Southern Rumoi
+013000,Abashiri · Kitami · Mombetsu Region
+013010,Abashiri Region
+013011,Western Abashiri
+013012,Eastern Abashiri
+013013,Southern Abashiri
+013020,Kitami Region
+013030,Mombetsu Region
+013031,Northern Mombetsu
+013032,Southern Mombetsu
+014000,Kushiro  Nemuro and Tokachi Region
+014010,Nemuro Region
+014011,Northern Nemuro
+014012,Middle Central
+014013,Southern Nemuro
+014020,Kushiro Region
+014021,Northern Kushiro
+014022,Middle Kushiro
+014023,Southeastern Kushiro
+014024,Southwestern Kushiro
+014030,Tokachi Region
+014031,Northern Tokachi
+014032,Middle Tokachi
+014033,Southern Tokachi
+014100,Kushiro and Nemuro Region
+015000,Iburi and Hidaka Region
+015010,Iburi Region
+015011,Western Iburi
+015012,Middle Iburi
+015013,Eastern Iburi
+015020,Hidaka Region
+015021,Western Hidaka
+015022,Middle Hidaka
+015023,Eastern Hidaka
+016000,Region of Ishikari/Sorachi/Shiribeshi
+016010,Ishikari Region
+016011,Northern Ishikari
+016012,Middle Ishikari
+016013,Southern Ishikari
+016020,Sorachi Region
+016021,Northern Sorachi
+016022,Middle Sorachi
+016023,Southern Sorachi
+016030,Shiribeshi Region
+016031,Northern Shiribeshi
+016032,The foot of Mt. Yotei
+016033,Western Shiribeshi
+016100,Region of Ishikari and Sorachi
+017000,Region of Oshima and Hiyama
+017010,Oshima Region
+017011,Northern Oshima
+017012,Eastern Oshima
+017013,Western Oshima
+017020,Hiyama Region
+017021,Northern Hiyama
+017022,Southern Hiyama
+017023,Hiyama-Okushirito
+020000,Aomori Prefecture
+020010,Tsugaru
+020011,Tosei-Tsugaru
+020012,Kitago-Tsugaru
+020013,Nishitsugaru
+020014,Chunan-Tsugaru
+020020,Shimokita
+020030,Sanpachi-Kamikita
+020031,Sanpachi
+020032,Kamikita
+020100,Tsugaru and Shimokita
+020200,Shimokita and Sanpachi-Kamikita
+030000,Iwate Prefecture
+030010,Inland
+030011,Morioka Area
+030012,Ninohe Area
+030013,Hanakita Area
+030014,Tono Area
+030015,Oshu Kanegasaki Area
+030016,Ryoban Area
+030020,Northern coast
+030021,Kuji Area
+030022,Miyako Area
+030030,Southern coast
+030031,Kamaishi Area
+030032,Ofunato Area
+040000,Miyagi Prefecture
+040010,Eastern Region
+040011,Eastern Sendai
+040012,Ishinomaki Area
+040013,Eastern Osaki
+040014,Kesennuma Area
+040015,Eastern Sennan
+040016,Tome · Eastern Kurihara
+040020,Western Region
+040021,Western Sendai
+040022,Western Sennan
+040023,Western Osaki
+040024,Western Kurihara
+050000,Akita Prefecture
+050010,Coast
+050011,Akita Central Area
+050012,Noshiro Yamamoto Area
+050013,Honjo Yuri Area
+050020,Inland
+050021,Hokusyu Kazuno Area
+050022,Semboku Hiraka Area
+050023,Yuzawa Ogachi Area
+060000,Yamagata Prefecture
+060010,Murayama
+060011,South-eastern Murayama
+060012,Northern Murayama
+060013,Western Murayama
+060020,Okitama
+060021,South-eastern Okitama
+060022,Western Okitama
+060030,Shonai
+060031,Northern Shonai
+060032,Southern Shonai
+060040,Mogami
+070000,Fukushima Prefecture
+070010,Nakadori
+070011,Northern Nakadori
+070012,Central Nakadori
+070013,Southern Nakadori
+070020,Hamadori
+070021,Northern Hamadori
+070022,Central Hamadori
+070023,Southern Hamadori
+070030,Aizu
+070031,Northern Aizu
+070032,Central Aizu
+070033,Southern Aizu
+070100,Nakadori and Hamadori
+080000,Ibaraki Prefecture
+080010,Northern Region
+080011,Ken-o Area
+080012,Kempoku Area
+080020,Southern Region
+080021,Rokko Area
+080022,Kennan Area
+080023,Kensei Area
+090000,Tochigi Prefecture
+090010,Southern Region
+090011,Ken-o part
+090012,South-eastern Region
+090013,South-western Region
+090020,Northern Region
+090021,Nasu Area
+090022,Nikko Area
+100000,Gunma Prefecture
+100010,Southern Region
+100011,Maebashi and Kiryu Area
+100012,Isesaki and Ota Area
+100013,Takasaki and Fujioka Area
+100020,Northern Region
+100021,Tone and Numata Area
+100022,Agatsuma Area
+110000,Saitama Prefecture
+110010,Southern Region
+110011,Southern Central Region
+110012,South-eastern Region
+110013,South-western Region
+110020,Northern Region
+110021,North-eastern Region
+110022,North-western Region
+110030,Chichibu District
+120000,Chiba Prefecture
+120010,North-western Region
+120011,Central Chiba
+120012,Imba
+120013,Higashi-Katsushika
+120020,North-eastern Region
+120021,Katori and Kaiso
+120022,Sammu and Chosei
+120030,Southern Region
+120031,Kimitsu
+120032,Isumi·Awa
+130000,Tokyo
+130010,Tokyo Region
+130011,Western Region of 23 wards
+130012,Eastern Region of 23 wards
+130013,Northern Tama
+130014,Western Tama
+130015,Southern Tama
+130020,Northern Izu Islands
+130021,Oshima Island
+130022,Niijima Island
+130030,Southern Izu Islands
+130031,Hachijojima Island
+130032,Miyakejima Island
+130040,Ogasawara Islands
+140000,Kanagawa Prefecture
+140010,Eastern Region
+140011,Yokohama and Kawasaki
+140012,Shonan
+140013,Miura Peninsula
+140020,Western Region
+140021,Sagamihara
+140022,Ken-o
+140023,Ashigara-kami
+140024,Seisho
+150000,Niigata Prefecture
+150010,Kaetsu
+150011,Niigata Area
+150012,Iwafune Area
+150013,Shibata Area
+150014,Gosen Area
+150020,Chuetsu
+150021,Nagaoka Area
+150022,Sanjo Area
+150023,Uonuma City
+150024,Kashiwazaki Area
+150025,Minami Uonuma Area
+150026,Toka-machi Area
+150030,Joetsu
+150031,Joetsu City
+150032,Itoigawa City
+150033,Myoko City
+150040,Sado
+160000,Toyama Prefecture
+160010,Eastern Region
+160011,South Eastern Region
+160012,North Eastern Region
+160020,Western Region
+160021,North Western Region
+160022,South Western Region
+170000,Ishikawa Prefecture
+170010,Kaga
+170011,Northern Kaga
+170012,Southern Kaga
+170020,Noto
+170021,Northern Noto
+170022,Southern Noto
+180000,Fukui Prefecture
+180010,Reihoku
+180011,Northern Reihoku
+180012,Southern Reihoku
+180013,Okuetsu
+180020,Reinan
+180021,Eastern Reinan
+180022,Western Reinan
+190000,Yamanashi Prefecture
+190010,Central · Western Region
+190011,Chuhoku Area
+190012,Kyoto Area
+190013,Kyonan Area
+190020,Eastern Region and Fuji Five Lakes
+190021,Eastern Region
+190022,Fuji Five Lakes
+200000,Nagano Prefecture
+200010,Northern Region
+200011,Nagano Area
+200012,Nakano-Iiyama Area
+200013,Daihoku Area
+200020,Central Region
+200021,Ueda Area
+200022,Saku Area
+200023,Matsumoto Area
+200024,Norikura-Kamikochi Area
+200025,Suwa Area
+200030,Southern Region
+200031,Kamiina Area
+200032,Kiso Area
+200033,Shimoina Area
+200100,Central Part and Southern Part
+210000,Gifu Prefecture
+210010,Mino Region
+210011,Gifu · Seino
+210012,Tono
+210013,Chuno
+210020,Hida Region
+210021,Northern Hida
+210022,Southern Hida
+220000,Shizuoka Prefecture
+220010,Central Region
+220011,Southern Central Region
+220012,Northern Central Region
+220020,Izu
+220021,Northern Izu
+220022,Southern Izu
+220030,Eastern Region
+220031,Southeastern Mt. Fuji
+220032,Southwestern Mt. Fuji
+220040,Western Region
+220041,Northern Enshu
+220042,Southern Enshu
+230000,Aichi Prefecture
+230010,Western Region
+230011,Eastern Owari
+230012,Western Owari
+230013,Chita Area
+230014,Southern Nishi-Mikawa Region
+230015,Northwestern Nishi-Mikawa Region
+230020,Eastern Region
+230021,North-eastern Nishi-Mikawa Region
+230022,Northern Higashi-Mikawa Region
+230023,Southern Higashi-Mikawa Region
+240000,Mie Prefecture
+240010,Northern and central Region
+240011,Central Region
+240012,Northern Region
+240013,Iga
+240020,Southern Region
+240021,Ise-Shima
+240022,Kisei · Higashi Kishu
+250000,Shiga Prefecture
+250010,Southern Region
+250011,Southern Omi Region
+250012,Higashi Omi
+250013,Koka
+250020,Northern Region
+250021,Western Omi
+250022,Kohoku
+250023,Koto
+260000,Kyoto Prefecture
+260010,Southern Region
+260011,Kyoto · Kameoka
+260012,Nantan · Kyotamba
+260013,Central Yamashiro
+260014,Southern Yamashiro
+260020,Northern Region
+260021,Tango
+260022,Maizuru · Ayabe
+260023,Fukuchiyama
+270000,Osaka Prefecture
+270001,Osaka City
+270002,Kita Osaka
+270003,Eastern Osaka
+270004,Minami Kawachi
+270005,Senshu
+280000,Hyogo Prefecture
+280010,Southern Region
+280011,Hanshin
+280012,Hokuban-Tamba
+280013,Northwestern Harima
+280014,Southeastern Harima
+280015,Southwestern Harima
+280016,Awajishima
+280020,Northern Region
+280021,Northern Tajima
+280022,Southern Tajima
+290000,Nara Prefecture
+290010,Northern Region
+290011,North-western Region
+290012,North-eastern Region
+290013,Gojo · Northern Yoshino
+290020,Southern Region
+290021,South-eastern Region
+290022,South-western Region
+300000,Wakayama Prefecture
+300010,Northern Region
+300011,Kihoku
+300012,Kichu
+300020,Southern Region
+300021,Tanabe · Nishimuro
+300022,Shingu · Higashimuro
+310000,Tottori Prefecture
+310010,Eastern Region
+310011,Tottori district
+310012,Yazu district
+310020,Central · Western Region
+310021,Kurayoshi district
+310022,Yonago district
+310023,Hino district
+320000,Shimane Prefecture
+320010,Eastern Region
+320011,Matsue district
+320012,Izumo district
+320013,Unnan district
+320020,Western Region
+320021,Oda-Ochi district
+320022,Hamada district
+320023,Masuda district
+320030,Oki
+330000,Okayama Prefecture
+330010,Southern Region
+330011,Okayama Area
+330012,Tobi Area
+330013,Kurashiki Area
+330014,Ikasa Area
+330015,Takahashi Area
+330020,Northern Region
+330021,Niimi Area
+330022,Maniwa Area
+330023,Tsuyama Area
+330024,Shoei Area
+340000,Hiroshima Prefecture
+340010,Southern Region
+340011,Hiroshima · Kure
+340012,Fukuyama · Bisan
+340013,Higashi Hiroshima · Takehara
+340020,Northern Region
+340021,Bihoku
+340022,Geihoku
+350000,Yamaguchi Prefecture
+350010,Western Region
+350011,Shimonoseki
+350012,Ube · Sanyo-Onoda
+350020,Central Region
+350021,Yamaguchi · Hofu
+350022,Shunan · Kudamatsu
+350030,Eastern Region
+350031,Iwakuni
+350032,Yanai · Hikari
+350040,Northern Region
+350041,Hagi · Mine
+350042,Nagato
+360000,Tokushima Prefecture
+360010,Northern Region
+360011,Tokushima · Naruto
+360012,Northern Mima · Ahoku
+360013,Southern Mima · Kamiyama
+360014,Miyoshi
+360020,Southern Region
+360021,Anan
+360022,Naka · Katsuura
+360023,Kaifu
+370000,Kagawa Prefecture
+370001,Takamatsu Area
+370002,Shozu
+370003,Tosan
+370004,Chusan
+370005,Seisan
+380000,Ehime Prefecture
+380010,Chuyo
+380020,Toyo
+380021,Eastern Toyo
+380022,Western Toyo
+380030,Nan-yo
+380031,Northern Nan-yo
+380032,Southern Nan-yo
+390000,Kochi Prefecture
+390010,Central Region
+390011,Central Kochi
+390012,Reihoku
+390013,Kogohoku
+390020,Eastern Region
+390021,Muroto
+390022,Aki
+390030,Western Region
+390031,Hata
+390032,Koban
+400000,Fukuoka Prefecture
+400010,Fukuoka Region
+400020,Kitakyushu Region
+400021,Kitakyushu and Onga district
+400022,Keichiku
+400030,Chikuho Region
+400040,Chikugo Region
+400041,Northern Chikugo
+400042,Southern Chikugo
+410000,Saga Prefecture
+410010,Southern Region
+410011,Saga-Taku district
+410012,Tosu district
+410013,Takeo district
+410014,Kashima district
+410020,Northern Region
+410021,Karatsu district
+410022,Imari district
+420000,Nagasaki Prefecture
+420010,Southern Region
+420011,Shimabara Peninsula
+420012,Nagasaki district
+420013,Isahaya and Omura district
+420014,Nishisonogi Peninsula
+420020,Northern Region
+420021,Hirado and Matsuura district
+420022,Sasebo and Tohi district
+420030,Iki · Tsushima
+420031,Iki
+420032,Kamitsushima
+420033,Shimotsushima
+420040,Goto
+420041,Kamigoto
+420042,Shimogoto
+420100,Southern Part/Northern Part/Goto
+430000,Kumamoto Prefecture
+430010,Kumamoto Region
+430011,Kumamoto City
+430012,Yamaga-Kikuchi
+430013,Arao-Tamana
+430014,Kamimashiki
+430015,Uki-Yatsushiro
+430020,Aso Region
+430030,Amakusa · Ashikita Region
+430031,Amakusa Region
+430032,Ashikita Region
+430040,Kuma Region
+440000,Oita Prefecture
+440010,Central Region
+440020,Northern Region
+440030,Western Region
+440031,Hita-Kusu
+440032,Taketa City
+440040,Southern Region
+440041,Saiki City
+440042,Bungoono City
+450000,Miyazaki Prefecture
+450010,Plain Area of Southern Region
+450011,Miyazaki district
+450012,Nichinan and Kushima district
+450020,Plain Area of Northern Region
+450021,Nobeoka and Hyuga district
+450022,Saito and Takanabe district
+450030,Area along mountains of Southern Region
+450031,Kobayashi and Ebino district
+450032,Miyakonojo district
+450040,Area along mountains of Northern Region
+450041,Takachiho district
+450042,Shiiba and Misato district
+460010,Satsuma Region
+460011,Kagoshima and Hioki
+460012,Izumi and Isa
+460013,Sensatsu and Aira
+460014,Koshikishima
+460015,Ibusuki and Kawanabe
+460020,Osumi Region
+460021,Soo
+460022,Kimotsuki
+460030,Tanegashima · Yakushima Region
+460031,Tanegashima Region
+460032,Yakushima Region
+460040,Amami Region
+460041,Northern Region
+460042,Southern Region
+460043,Toshima Village
+460100,Kagoshima Prefecture (excluding Amami Region)
+471000,Okinawa Main Island Region
+471010,Central and Southern Main Island
+471011,Southern Region
+471012,Central Region
+471013,Kerama · Aguni Islands
+471020,Northern Main Island
+471021,Izena · Iheya
+471022,Kunigami district
+471023,Nago district
+471024,Onna · Kin district
+471030,Kumejima
+472000,Daitojima Region
+473000,Miyakojima Region
+473001,Miyakojima
+473002,Taramajima
+474000,Yaeyama Region
+474010,Ishigakijima Region
+474011,Ishigaki City
+474012,Taketomi Town
+474020,Yonagunijima Region
